@@ -1,3 +1,3 @@
 # Web-Design-Decal
 
-Assignments from the web design. 
+Assignments & Projects from web design. 
