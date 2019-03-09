@@ -114,6 +114,9 @@ line-height: 30px;
     padding: 20px;
     font-size: 24px;
     font-weight: 100;
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%);
 }
 #q4-background {
 	background: url('background.jpg');
@@ -145,6 +148,9 @@ line-height: 30px;
     width: 180px;
     text-align: center;
     padding: 10px 0px;
+    position: absolute;
+    top: 15%;
+    left: 42%;
 }
 #q5-cancel {
     background: #de6868;
@@ -153,6 +159,9 @@ line-height: 30px;
     width: 180px;
     text-align: center;
     padding: 10px 0px;
+    position: absolute;
+    top: 22%;
+    left: 42%;
 }
 
 /* Question 6 */
