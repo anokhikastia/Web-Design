@@ -201,8 +201,9 @@ line-height: 30px;
 /* Question 7 and Extra */
 
 #q7-sidebar {
-    width: 80px;
+    width: 80px; 
     background: #2f353f;
+    height: 100%;
 }
 #q7-sidebar-content {
     padding: 10px;
@@ -219,4 +220,7 @@ line-height: 30px;
     font-weight: 700;
     color: #857c78;
     border-bottom: 1px solid #DDD;
+    top: 0px;
+    position: absolute;
+    left: 90px;
 }
