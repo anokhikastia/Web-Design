@@ -1,0 +1,45 @@
+html, body {
+    margin: 0px; 
+    padding: 0px;
+}
+#top-bar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+}
+#logo {
+    border-radius: 50%;
+}
+#title {
+    position: relative;
+    width: 23%;
+    height: 50%;
+}
+#AZtitle {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    transform: translateY(-125%);
+    width: 100%;
+    text-align: center;
+}
+.A-Z {
+    position: relative;
+    width: 23%;
+    height: 50%;
+}
+#A {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transform: translateY(10%);
+}
+
