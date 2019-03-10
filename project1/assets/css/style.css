@@ -4,7 +4,7 @@ html, body {
 }
 #top-bar {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: black;
@@ -14,32 +14,46 @@ html, body {
 #logo {
     border-radius: 50%;
 }
-#title {
-    position: relative;
-    width: 23%;
-    height: 50%;
-}
-#AZtitle {
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
+#AZ-container {
     position: absolute;
-    transform: translateY(-125%);
-    width: 100%;
-    text-align: center;
+    margin-left: 50px;
+    margin-right: auto;
+    margin-top: -50px;
 }
-.A-Z {
-    position: relative;
-    width: 23%;
-    height: 50%;
-}
-#A {
-    font-size: 30px;
-    font-weight: bold;
+.item {
+    width: 9px;
+    height: 9px;
     color: white;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    transform: translateY(10%);
+    font-size: 20px;
+    padding: 14.5px;
+    display: inline-block;
+    margin-left: 5px;
 }
-
+.item:hover {
+    color: gray;
+    font-weight: bold;
+    cursor: pointer;
+}
+#navbar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    height: 30px;
+}
+.navItem {
+    display: inline-block;
+    margin-left: 5px;
+}
+#fb {
+    border-radius: 70%;
+}
+#lk {
+    border-radius: 70%;
+}
+#tw {
+    border-radius: 70%;
+}
+#in {
+    border-radius: 70%;
+}
