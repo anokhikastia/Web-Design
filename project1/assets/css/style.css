@@ -34,6 +34,27 @@ html, body {
     cursor: pointer;
 }
 
+.searchnav {
+    background-color: black;
+    position: fixed;
+    margin-left: 30%;
+    margin-top: 5%;
+    z-index: 1; 
+}
+.searchnav input[type=text] {
+  float: center;
+  padding-top: 20px; 
+  padding-bottom: 20px;
+  padding-left: 170px;
+  padding-right: 170px;
+  border: solid;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
 .pictures {
     position: absolute;
     display: grid;
@@ -48,10 +69,12 @@ html, body {
 }
 .pic {
     opacity: 0.5;
+    z-index: -1;
 }
 .pic:hover {
     cursor: pointer;
     opacity: 1.0;
+    z-index: -1;
 }
 
 #navbar {
