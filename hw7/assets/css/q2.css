@@ -1,0 +1,132 @@
+/**************************/
+/*QUESTION 2: Mobile First*/
+/**************************/
+
+.box {
+	height: 200px;
+	width: 100%;
+}
+
+.title {
+	height: 56px;
+	font-size: 28px;
+}
+
+
+/**************************/
+/*QUESTION 2: Media Queries*/
+/**************************/
+
+
+
+
+
+
+
+
+
+
+
+
+/*Add an expression between the parentheses*/
+
+@media {
+	#grid-container {
+		min-height: 500px; /*900 px */
+		max-height: 900px;
+		height: 100vh;
+		width: 100vw;
+		display: grid;
+		grid-template-areas: "title . ."
+							 "games friends friends"
+							 "games stats stats"
+							 "profile settings logout"; 
+		grid-template-columns: 2fr 1fr 1fr;
+		grid-template-rows: 56px 1fr 1fr 1fr;
+	}
+	.box {
+		height: auto;
+	}
+	.title {
+		font-size: 32px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************/
+/*Other Code | No need to change it*/
+/***********************************/
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	background: #DBEAF1;
+}
+#grid-container {
+	min-height: 350px;
+}
+
+.box {
+	font-size: 28px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.grid-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	grid-area: title;
+}
+
+.games {
+	grid-area: games;
+	background: #3A8EB4;
+}
+
+.profile {
+	grid-area: profile;
+	background: #9BC995;
+}
+
+.friends {
+	grid-area: friends;
+	background: #FFAD69;
+}
+
+.stats {
+	grid-area: stats;
+	background: #E07A5F;
+}
+
+.settings {
+	grid-area: settings;
+	background: #DCCCA3;
+}
+
+.logout {
+	grid-area: logout;
+	background: #F6D8AE;
+}
+
+

@@ -1,0 +1,73 @@
+/*************************/
+/*QUESTION 1: NOT WRAPPED*/
+/*************************/
+#no-wrap-container {
+	justify-content: space-around;
+	display: flex;
+	.square {
+		flex: none;
+		overflow-x: auto;
+	}
+}
+
+
+
+
+
+/**********************/
+/*QUESTION 1: WRAPPED*/
+/**********************/
+#wrap-container {
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+/***********************************/
+/*Other Code | No need to change it*/
+/***********************************/
+
+body {
+	margin: 0;
+	background-color: #FDFDFD;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#container {
+	font-size: 24px;
+}
+
+#no-wrap-question {
+	margin-top: 12px;
+	padding: 24px;
+}
+
+#wrap-question {
+	margin-top: 12px;
+	padding: 24px;
+}
+
+#no-wrap-container {
+	margin-top: 12px;
+}
+
+#wrap-container {
+	margin-top: 12px;
+}
+
+.square {
+	height: 200px;
+	width: 200px;
+	border-radius: 4px;
+	margin: 4px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.28);
+}
+
+#no-wrap-container .square {
+	background: #3A8EB4;
+}
+
+#wrap-container .square {
+	background: #FCB07E;
+}

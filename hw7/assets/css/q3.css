@@ -1,0 +1,173 @@
+/*********************************/
+/*QUESTION 3: initial nav display*/
+/*********************************/
+
+#desktop-nav-container {
+	display: flex;
+}
+
+#mobile-nav {
+	display: none;
+}
+
+/*needed here to not be override other selectors
+don't change*/
+#image-gallery {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 12px;
+}
+
+#image-gallery div {
+	height: 200px;
+	width: 100%;
+	margin: 12px; 
+
+}
+
+#image-gallery img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+/*end of do not touch zone*/
+
+
+/***************************/
+/*QUESTION 3: MEDIA QUERIES*/
+/***************************/
+
+@media (min-width: 450px) {
+	#desktop-nav-container {
+		display: flex;
+
+
+	}
+	#mobile-nav {
+		display: none;
+
+	}
+	#content-container {
+
+	}
+
+	#image-gallery div {
+		height: 300px;
+		width: 100%;
+		max-width: 450px;
+	}
+
+}
+
+@media (min-width: 724px) {
+	#image-gallery {
+		display: flex; 
+		flex-direction: row;
+	}
+	#content-container {
+		width: 700px;
+		top: 64px;
+		box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.28);
+	}
+	#image-gallery div {
+		height: 200px;
+		width: 200px;
+	}
+}
+
+
+
+
+/***********************************/
+/*Other Code | No need to change it*/
+/***********************************/
+
+body {
+	margin: 0;
+	font-size: 20px;
+	font-family: 'Cardo', serif;
+}
+
+/*NAV*/
+
+#desktop-nav-container {
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+	background: #4FC3F7;
+	color: #F0EDEE;
+	position: fixed;
+	z-index: 1;
+	justify-content: center;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.12), 0 3px 5px rgba(0,0,0,0.16);
+}
+#mobile-nav {
+	font-family: 'Montserrat', sans-serif;
+	bottom: 0;
+	width: 100%;
+	background: #4FC3F7;
+	color: #F0EDEE;
+	z-index: 1;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	position: fixed;
+}
+
+#mobile-nav::scrollbar { 
+    display: none; 
+}
+
+#mobile-nav div {
+	padding: 12px 12px;
+	cursor: pointer;
+}
+
+#mobile-nav div:active {
+	background-color: #3A8EB4;
+}
+
+
+#navbar {
+	display: flex;
+	padding: 0px 24px;
+	width: 960px;
+}
+
+#navbar div {
+	cursor: pointer;
+	padding: 12px 12px;
+	transition: 0.2s;
+}
+
+#navbar div:hover {
+	opacity: 0.5;
+}
+
+/*CONTENT*/
+
+.header {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 52px;
+	margin-bottom: 20px;
+}
+
+.author {
+	font-size: 28px;
+	margin-bottom: 48px;
+}
+
+#content-container {
+	min-width: 250px;
+	position: relative;
+	background-color:#FDFDFD;
+	line-height: 1.4;
+	margin: 0px auto;
+	padding: 24px;
+	margin-bottom: 36px;
+}
+
+
+
+
