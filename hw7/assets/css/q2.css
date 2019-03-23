@@ -32,8 +32,7 @@
 
 @media {
 	#grid-container {
-		min-height: 500px; /*900 px */
-		max-height: 900px;
+		min-height: 900px; 
 		height: 100vh;
 		width: 100vw;
 		display: grid;
@@ -52,7 +51,26 @@
 	}
 }
 
-
+@media {
+	#grid-container {
+		min-height: 500px; 
+		max-height: 900px;
+		display: grid;
+		grid-template-areas: "title . ."
+							 "games games"
+							 "profile profile"
+							 "friends stats"
+							 "settings logout"; 
+		grid-template-columns: 2fr 1fr 1fr;
+		grid-template-rows: 56px 1fr 1fr 1fr;
+	}
+	.box {
+		height: auto;
+	}
+	.title {
+		font-size: 32px;
+	}
+}
 
 
 
