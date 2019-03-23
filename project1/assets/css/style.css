@@ -110,3 +110,74 @@ html, body {
 #in {
     border-radius: 70%;
 }
+
+/* Artists page */
+#box-container {
+    width: 100%;
+    height: 300%;
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 99, 71, 0.5);
+}
+
+#artist-top-bar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+#artist-top-bar:hover {
+    color: green;
+    cursor: pointer;
+}
+#adele {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#album-container {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    z-index: -5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.album {
+    display: inline-block;
+}
+.album-img {
+    width: 280px;
+    height: 280px;
+    margin: 5px;
+    margin-top: 60px;
+    border: 1px solid white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.album-name {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.album img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.album-year {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
