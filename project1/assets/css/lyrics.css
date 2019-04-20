@@ -1,0 +1,55 @@
+html, body {
+    margin: 0px; 
+    padding: 0px; 
+    overflow: auto;
+}
+#lyrics-container {
+    width: 100%;
+    height: 200%;
+    background-color: #FFDEAD;
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    left: 0;
+}
+#top-bar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: green;
+    height: 50px;
+    z-index: 50;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+}
+#az-picture {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+#az-title {
+    z-index: 50;
+    color: white; 
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+#searchbar-container {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 50; 
+}
+#searchbar input[type=text] {
+  float: center;
+  border: solid;
+  font-size: 17px;
+  font-weight: bold;
+}
+#bad-romance-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+}
