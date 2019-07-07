@@ -6,22 +6,21 @@ html, body {
 #box-container {
     width: 100%;
     height: 300%;
-    position: absolute;
     z-index: -100;
     top: 0;
     left: 0;
-    background-color: rgba(255, 99, 71, 0.5);
+	background-color:lightpink; 
 }
 #top-bar {
     width: 100%;
     top: 0;
     left: 0;
+	z-index: 10; 
     background-color: black;
     height: 50px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
 }
 #top-item {
-    z-index: -5;
     right: 0;
     top: 1;
     color: white;
@@ -34,4 +33,83 @@ html, body {
 }
 #top-item:hover {
     cursor: pointer;
+}
+.AK-container {
+	margin-left: 15%;
+	margin-top : 10%;
+	position: absolute;
+	animation: fadeIn 2.5s;
+  	animation-timing-function: cubic-bezier(1,-0.19,1,1);
+}
+.AK {
+	color: blue;
+	font-size: 100px;
+	font-weight:bold;
+	letter-spacing: 5px;
+}
+.AKTypes {
+	font-size: 30px;
+	color: blue;
+	margin-left: 30%;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 2.5px;
+}
+img {
+	width: 350px;
+	height: 350px;
+	margin-top : 30%;
+	margin-left: 0%;
+	border-radius: 50%;
+}
+#about {
+	margin-left: 10%;
+	margin-top : 30%;
+	display: flex;
+}
+#about-me {
+	font-size: 30px;
+	color: green;
+	font-weight: bold;
+	padding-right: 100px;
+	margin-top : 30%;
+	margin-left: 10%;
+	font-family: 'Times New Roman';
+}
+
+.contactIcons {
+    left: 0;
+    margin: 0 auto;
+	transform:rotate(90deg); 
+}
+
+.github {
+    padding-left: 5px;
+    width: 100px;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linkedin {
+    padding-left: 5px;
+    width: 100px;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resume {
+    padding-left: 5px;
+    width: 100px;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mail {
+    padding-left: 5px;
+    width: 100px;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
