@@ -54,7 +54,7 @@ html, body {
 	font-family: 'Lato', sans-serif;
 	letter-spacing: 2.5px;
 }
-img {
+.img-about {
 	width: 350px;
 	height: 350px;
 	margin-top : 30%;
@@ -76,10 +76,116 @@ img {
 	font-family: 'Times New Roman';
 }
 
+#projects {
+    font-size: 30px;
+    color: blue;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-left: 45%;
+    padding-top: 10%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3,33.33%);
+  grid-template-rows: repeat(2,50%);
+  padding-left: 5%;
+  padding-top: 2.5%;
+}
+.search {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    border-style: solid;
+    border-color: white;
+}
+.search:hover {
+    cursor: pointer;
+}
+.gitlet {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    border-style: solid;
+    border-color: white;
+}
+.gitlet:hover {
+    cursor: pointer;
+}
+.cqb {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    border-style: solid;
+    border-color: white;
+}
+.cqb:hover {
+    cursor: pointer;
+}
+.joins {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    border-style: solid; 
+    margin-top:10px;
+    border-color: white;
+}
+.joins:hover {
+    cursor: pointer;
+}
+.qop {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    border-style: solid;
+    margin-top:10px;
+    border-color: white;
+}
+.qop:hover {
+    cursor: pointer;
+}
+.thumbnail {
+  position: relative;
+  max-width: 350px;
+}
+.thumbnail:hover > .caption {
+  height: 60%;
+}
+.caption {
+  position: absolute;
+  bottom: 4px;
+  color: #e3e3e3;
+  background: rgba(0, 0, 0, .75);
+  text-align: center;
+  height: 0; 
+  width: 100%;
+  overflow: hidden;
+  transition: all 200ms ease;
+  font-size: 1vw;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 140%;
+}
+.caption p {
+  padding: 3%;
+  overflow: hidden;
+}
+.caption1 {
+  margin-top: 4%;
+  font-weight: 700;
+  font-size: 1.1vw;
+}
+
+#contact-me {
+    font-size: 50px; 
+    font-style: bold;
+    color: blue;
+    padding-left: 37%;
+    padding-top: 5%;
+}
 .contactIcons {
     left: 0;
     margin: 0 auto;
-	transform:rotate(90deg); 
 }
 
 .github {
