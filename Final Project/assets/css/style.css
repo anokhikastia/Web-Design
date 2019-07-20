@@ -29,10 +29,10 @@ html, body {
     font-family: 'Open Sans', sans-serif;
     padding: 10px 30px;
     text-align: center;
-    text-decoration: underline;
 }
 #top-item:hover {
     cursor: pointer;
+    text-decoration: underline;
 }
 .AK-container {
 	margin-left: 15%;
@@ -68,20 +68,38 @@ html, body {
 }
 #about-me {
 	font-size: 30px;
-	color: green;
+	color: blue;
 	font-weight: bold;
 	padding-right: 100px;
 	margin-top : 30%;
 	margin-left: 10%;
 	font-family: 'Times New Roman';
 }
+#skills {
+    margin-left:10%; 
+    margin-right:10%;
+    width: 85%;
+}
+#skill-header {
+    color: blue;
+    font-size: 50px;
+    font-weight:bold;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 4%;
+}
+.skill {
+    width: 90%;
+    height: auto;
+}
 
 #projects {
-    font-size: 30px;
+    font-size: 50px;
     color: blue;
     font-weight: bold;
     letter-spacing: 5px;
-    padding-left: 45%;
+    padding-left: 40%;
     padding-top: 10%;
 }
 .grid-container {
